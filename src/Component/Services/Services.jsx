@@ -7,7 +7,7 @@ import Service_Data from '../../../assets/service_data'
 
 const Services = () => {
   return (
-    <div className={style.services}>
+    <div id='services' className={style.services}>
       <div className={style.services_title}>
         <h1>My Services</h1>
         <Image src='/auction.png'width={30} height={30} alt="" />

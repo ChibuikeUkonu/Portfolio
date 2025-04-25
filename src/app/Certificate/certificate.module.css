@@ -1,6 +1,6 @@
  .abouts{
     display: flex;
-   flex-direction: column;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap:40px;
@@ -14,13 +14,12 @@
     background: linear-gradient(264deg, #df8908 -5.09%, #b415ff 106.28%);
 }
 .certified_container p{
-    display: flex;
     padding-left: 15px;
     align-items: center;
     justify-items: center;
     min-width: 140px;
     font-size: 24px;
-    font-weight: 400; 
+    font-weight: 200; 
 }
 .certified_container h2{
     margin-bottom: 10px;
@@ -53,8 +52,7 @@
     align-items: center;
     grid-template-columns: 5fr 5fr 5fr;
     margin-bottom: 80px;
-    gap: 10px;
-    flex-direction: column;
+    gap: 30px; 
 }
 .secondary:hover{
     border: 2px solid #ff00ff;
@@ -68,6 +66,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 150px;
+    width: 100%;
     border:1px solid white;
 }
 .university:hover{
@@ -80,14 +80,14 @@
     padding-left: 10px;
     padding-right: 10px;
 }
-.pratices{
+/* .pratices{
     display: flex;
     border-radius: 20px;
     justify-content: center;
     align-items: center;
     border:1px solid white;
     flex-direction: column;
-}
+} */
 .pratices:hover{
     border: 1px solid #ff00ff;
     background-image: linear-gradient(45deg, #3f0028,#582300);

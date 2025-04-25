@@ -4,6 +4,8 @@ import React from 'react'
 import About from '@/Component/About/About'
 import Services from '@/Component/Services/Services'
 import MyWork from '@/Component/MyWork/MyWork'
+import Contact from '@/Component/Contact/Contact'
+import Footer from '@/Component/Footer/Footer'
 
 const page = () => {
   return (
@@ -13,6 +15,8 @@ const page = () => {
     <About/>
     <Services/>
     <MyWork/>
+    <Contact/>
+    <Footer/>
     </div>
   )
 }

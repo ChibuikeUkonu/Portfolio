@@ -4,7 +4,7 @@ import style from './About.module.css'
 
 const About = () => {
   return (
-    <div className={style.about}>
+    <div id='about' className={style.about}>
       <div className={style.about_title}>
         <h1>About me</h1>
         <Image src='/auction.png'width={30} height={30} alt="" />
@@ -37,7 +37,7 @@ Development and Project Management services</p>
         </div>
         <hr />
         <div className={style.about_achievement}>
-            <h1>90+</h1>
+            <h1>19+</h1>
             <p>PROJECT COMPLETED </p>
           </div>
           <hr />
