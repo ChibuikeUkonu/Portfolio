@@ -1,5 +1,6 @@
    "use client"
-import { useState, useRef } from 'react'
+import { useState} from 'react'
+import { useRef } from 'react'
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -10,20 +11,23 @@ import { CgMathMinus } from "react-icons/cg";
 
 const Navbar = () => {
   const[menu,setMenu] = useState("home")
-  const menuRef = (useRef);
-
-  const openMenu = () => {
-    menuRef.current.style.right="0"
-  }
-  const closeMenu = () => {
-    menuRef.current.style.right="-350px"
-  }
-  return (
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const menuRef = useRef(null);
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+    if (menuRef.current) {
+      menuRef.current.style.right = isMenuOpen ? '-350px' : '0';
+    }
+  };
+ 
+ return (
     <div className={Style.navbar}>
-      {/* <Image src='/logo.png' width={100}height={100} alt="" /> */}
-      <Image className={Style.nav_mob_open} src='/hamburger.png'onClick={openMenu} width={30}height={30} alt="" />
-      <ul Ref={menuRef} className={Style.nav_menu}>
-      <Image className={Style.nav_mob_close} src='/menu.png'onClick={closeMenu} width={30}height={30} alt="" />
+      <Image className={Style.nav_mob_open} src='/hamburger.png'onClick={toggleMenu}width={30}height={30} alt="" />
+      <ul 
+        ref={menuRef}
+        className={`${Style.nav_menu} ${isMenuOpen ? Style.active : ''}`}
+      >
+      <Image className={Style.nav_mob_close} src='/menu.png'onClick={toggleMenu}width={30}height={30} alt="" />
 
   <li><a className={Style.anchor_link}href="home"onClick={(e) => {
       e.preventDefault();  // Prevent default anchor behavior
@@ -94,7 +98,7 @@ const Navbar = () => {
       }
     }}><p onClick={()=>setMenu("contact")}>contact</p></a>{menu==="contact"?<Image src='/auction.png'width={10} height={10} alt='' />:<></>}</li>
 
-       <Link href='/Certificate'>Certifications</Link>
+       <Link className={Style.certificate} href='/Certificate'>Certifications</Link>
       </ul>
       <div className={Style.nav_connect}><a href='connect'onClick={(e) => {
       e.preventDefault();  // Prevent default anchor behavior

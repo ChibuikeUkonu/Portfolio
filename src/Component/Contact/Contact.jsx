@@ -2,6 +2,8 @@
 import React from 'react'
 import style from './Contact.module.css'
 import Image from 'next/image'
+import Link from 'next/link'
+import { GrLinkedin } from "react-icons/gr";
 import { IoMdMail } from "react-icons/io"
 import { FaLocationDot } from "react-icons/fa6";
 import { IoMdCall } from "react-icons/io";
@@ -13,7 +15,7 @@ const Contact = () => {
         
         const formData = new FormData(event.target);
 
-        formData.append("access_key", "4609d839-30c1-44f3-a7b5-dc2ff617182d");
+        formData.append("access_key", "37f627fc-a2e2-4d7e-8d14-ebc50cbd53e7");
 
         const object = Object.fromEntries(formData);
         const json = JSON.stringify(object);
@@ -49,10 +51,24 @@ const Contact = () => {
           </div>
 
           <div className={style.contact_detail}>
+            <Link  href={`https://www.linkedin.com/in/ike-kalu-pmp%C2%AE-5161b820a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app `}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:text-blue-600 transition-colors"
+        aria-label="Visit LinkedIn profile"
+        >
+            <GrLinkedin />
+            </Link>
           </div>
 
-          <div className={style.contact_detail}>
-          <FaWhatsapp /><p></p>
+          <div className={style.contacts_detail}>
+           <Link href={`https://wa.me/${+2348069285041}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:text-green-500 transition-colors"
+        aria-label="Contact via WhatsApp">
+          <FaWhatsapp size={24}/>
+          </Link>
           </div>
          </div>
        </div>

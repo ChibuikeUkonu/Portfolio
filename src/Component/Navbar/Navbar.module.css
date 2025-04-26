@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 130px;
+    margin: 20px 170px;
 }
 .nav_menu{
     display: flex;
@@ -35,9 +35,12 @@
 .nav_mob_close{
     display: none;
 }
-@media(max-width:770px){
+.nav_mob_open{
+    display: none;
+}
+@media(max-width:765px){
    .navbar{
-    margin: 20px 50px;
+    margin: 10px 50px;
    }
    .nav_connect{
     display: none;
@@ -45,21 +48,24 @@
    .nav_mob_open{
     position: fixed;
     display: block;
-    right: 30px;
+    cursor: pointer;
+    top:4px;
+    right: 10px;
    }
    .nav_mob_close{
     display: block;
     position: relative;
-    top: 30px;
+    top: 10px;
+    cursor: pointer;
     width: 30px;
-    left: 170px;
+    left: 190px;
    }
    .nav_menu{
     position: fixed;
     width:270px;
     flex-direction: column;
     top:0;
-    gap:20px;
+    gap:10px;
     align-items: start;
     background-color: #1f0015;
     height:100%;
@@ -70,7 +76,13 @@
    .nav_menu li{
     font-size: 30px;
     flex-direction: row;
-    padding-left: 100px;
+    padding-left: 90px;
     gap: 20px;
+   }
+   .certificate{
+    font-size: 30px;
+    flex-direction: row;
+    padding-left: 70px;
+    gap: 30px;
    }
 }
