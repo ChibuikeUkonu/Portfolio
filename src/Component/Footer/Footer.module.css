@@ -81,6 +81,7 @@
     }
     .footer_bottom_right{
         display: flex;
+        font-size: 10px;
         gap:25px;
     }
     .footer_left{
