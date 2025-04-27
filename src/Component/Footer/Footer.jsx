@@ -14,7 +14,7 @@ Development and Project Management services, procurement and supply chain manage
 Nigerian oil and gas sector</p>
       </div>
       <div className={style.footer_top_right}>
-        <div className={style.footer_email_input}>
+        {/* <div className={style.footer_email_input}>
         <FaUser
         style={{
               marginTop:'7px',
@@ -22,7 +22,7 @@ Nigerian oil and gas sector</p>
          />
         <input type="email"placeholder='Enter your email' />
         </div>
-        <div className={style.footer_subscribe}>Subscribe</div>
+        <div className={style.footer_subscribe}>Subscribe</div> */}
       </div>
     </div>
     <hr />
