@@ -79,9 +79,12 @@
         font-size: 13px;
         font-weight: 500;
     }
+    .footer_bottom_right{
+        gap:10px;
+        font-weight: 600;
+    }
     .footer_bottom_right p{
         font-size: 7px;
-        gap:7px;
     }
     .footer_left{
         font-size: 10px;
