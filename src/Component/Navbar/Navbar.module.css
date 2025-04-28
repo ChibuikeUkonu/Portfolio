@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: red;
+    /* background-color: red; */
     max-width: 80%;
     margin: 30px auto;
 }
