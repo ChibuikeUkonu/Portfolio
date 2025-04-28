@@ -2,7 +2,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 170px;
+    /* background-color: red; */
+    max-width: 80%;
+    margin: 30px auto;
 }
 .nav_menu{
     display: flex;
@@ -38,9 +40,9 @@
 .nav_mob_open{
     display: none;
 }
-@media(max-width:765px){
+@media(max-width:768px){
    .navbar{
-    margin: 10px 50px;
+    margin: 10px 30px;
    }
    .nav_connect{
     display: none;
