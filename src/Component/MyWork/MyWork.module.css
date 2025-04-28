@@ -41,7 +41,7 @@
         font-size: 15px;
         font-weight: 600; 
         padding: 10px 10px 10px 10px; 
-        background: linear-gradient(45deg, #3f0028,#582300);
+        background: linear-gradient(45deg, #3f0028,#ed7d32);
      }
      .Service_format h2:hover{
         transform: scale(1.10);

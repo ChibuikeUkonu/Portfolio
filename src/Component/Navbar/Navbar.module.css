@@ -40,9 +40,6 @@
 .nav_mob_open{
     display: none;
 }
- .nav_mob_open li{
-  color: var(--text-primary);
-  }
 @media(max-width:768px){
    .navbar{
     margin: 10px 30px;
@@ -72,7 +69,7 @@
     top:0;
     gap:10px;
     align-items: start;
-    background-color: #1f0015;
+    background-color: #ccc;
     height:100%;
     z-index: 2;
     right:-270px;

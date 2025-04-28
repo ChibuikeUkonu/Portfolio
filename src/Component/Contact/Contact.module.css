@@ -115,10 +115,13 @@
   .contact_left h1{
     color: var(--text-primary);
   }
-  .contact_detail link{
+  .contact_right label{
     color: var(--text-accent);
     transition: color 0.2s ease;
   }
+  .contact_detail p{
+    color: var(--text-primary);
+}
   
 @media(max-width:768px){
     .Contact{
