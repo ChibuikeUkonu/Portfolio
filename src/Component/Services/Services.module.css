@@ -55,6 +55,14 @@
     line-height: 40px;
     max-width: 330px;
 }
+.Service_format p {
+    color: var(--text-primary);
+  }
+  
+  .services_title h1{
+    color: var(--text-primary);
+  }
+  
 .services_readmore{
     display: flex;
     align-items: center;

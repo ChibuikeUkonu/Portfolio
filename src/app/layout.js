@@ -1,5 +1,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { LoadingProvider } from "@/context/LoadingContext";
+import { LoadingOverlay } from "@/Component/LoadingOverlay";
+import { ThemeProvider } from "@/context/ThemeContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,12 +20,30 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  
   return (
-    <html lang="en">
+    
+    <html lang="en" suppressHydrationWarning>
+     <head>
+        <script dangerouslySetInnerHTML={{
+          __html: `
+            (function() {
+              const theme = localStorage.getItem('theme') || 
+                (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+              document.documentElement.setAttribute('data-theme', theme);
+            })()
+          `
+        }} />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+      <ThemeProvider>
+     <LoadingProvider>
+          <LoadingOverlay />
+          {children}
+        </LoadingProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

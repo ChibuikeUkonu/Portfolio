@@ -10,3 +10,32 @@ body{
   color:white;
   font-weight: 200;
 }
+:not(svg) {
+  transform-origin: 0px 0px;
+}
+[data-theme='light'] {
+  --bg-color: #ffffff;
+  --text-color: #131212;
+}
+
+[data-theme='dark'] {
+  --bg-color: #1a1a1a;
+  --text-color: #ffffff;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.theme-toggle-btn {
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.theme-toggle-btn:hover {
+  background-color: var(--text-color);
+  opacity: 0.1;
+}

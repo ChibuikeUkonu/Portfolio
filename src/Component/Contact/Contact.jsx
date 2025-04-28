@@ -30,7 +30,7 @@ const Contact = () => {
         });
         const result = await res.json();
         if (result.success) {
-          alert("Succussfully completed")
+          alert("Succussfully Sent ")
         }
     }
   return (

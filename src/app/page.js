@@ -6,6 +6,7 @@ import Services from '@/Component/Services/Services'
 import MyWork from '@/Component/MyWork/MyWork'
 import Contact from '@/Component/Contact/Contact'
 import Footer from '@/Component/Footer/Footer'
+import { ThemeProvider } from '@/context/LoadingContext'
 
 const page = () => {
   return (

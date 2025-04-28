@@ -105,6 +105,21 @@
 .contacts_detail{
     display: flex;
 }
+.contact_left p {
+    color: var(--text-primary);
+  }
+  
+  .contact_title h1{
+    color: var(--text-primary);
+  }
+  .contact_left h1{
+    color: var(--text-primary);
+  }
+  .contact_detail link{
+    color: var(--text-accent);
+    transition: color 0.2s ease;
+  }
+  
 @media(max-width:768px){
     .Contact{
         gap:50px;
