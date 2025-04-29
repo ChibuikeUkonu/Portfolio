@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predev": "rimraf .next/ types/",
+  "prebuild": "rimraf .next/ types/",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -19,6 +21,8 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
+    "rimraf": "^6.0.1",
     "tailwindcss": "^4"
   }
+  
 }
