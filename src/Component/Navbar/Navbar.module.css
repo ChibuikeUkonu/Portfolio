@@ -2,7 +2,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     max-width: 80%;
+    overflow: hidden;
     padding: 0px 50px;
     margin: 30px auto;
 }
@@ -17,7 +19,7 @@
     padding: 10px 20px;
     border-radius: 50px;
     background:linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
-    font-size: 15px;
+    font-size: 20px;
     cursor: pointer;
     transition: 0.5s;
 }
