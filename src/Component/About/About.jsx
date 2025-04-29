@@ -17,9 +17,9 @@ const About = () => {
          <div className={style.about_para}>
           <p>I'm a Bid/Tender Personnel with over 8 years practical, I provide relevant and 
 progressive expertise in Tendering Preparation, Bidding Negotiations, Document Control, Business 
-Development and Project Management services</p>
+Development and Project Management services.</p>
            <p>I am competent in using various software related to tender preparation and 
-           contracts administration and I give my best when delivering winning tenders and pitching capabilities for 
+           contracts administration, and I give my best when delivering winning tenders and pitching capabilities for 
            strategic positioning for new business.</p>
          </div>
          <div className={style.about_skills}>

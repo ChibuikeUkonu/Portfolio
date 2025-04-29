@@ -11,7 +11,7 @@ const Footer = () => {
         <p>I am an oriented professional with over 7 years practical, relevant and
 progressive expertise in Tendering Preparation, Bidding Negotiations, Document Control, Business
 Development and Project Management services, procurement and supply chain management in the
-Nigerian oil and gas sector</p>
+Nigerian oil and gas sector.</p>
       </div>
       <div className={style.footer_top_right}>
       
